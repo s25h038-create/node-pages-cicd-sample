@@ -17,8 +17,7 @@ const template = fs.readFileSync(templatePath, "utf-8");
 
 const title = "Node.js CI/CD Sample";
 const heading = "GitHub Actions + GitHub Pages Demo";
-const message = "Push をきっかけに自動テスト・自動デプロイされています。";
-const builtAt = new Date().toISOString();
+const message = "GitHub Actions により、テストとデプロイが自動実行されています。";const builtAt = new Date().toISOString();
 const commitSha = process.env.GITHUB_SHA || "local-build";
 
 const outputHtml = template
